@@ -106,6 +106,7 @@ posts
     margin-top: var(--marginTop);
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .posts article img {
     width: 100%;
@@ -149,6 +150,7 @@ footer {
 }
 footer .container {
     display: flex;
+    flex-wrap: wrap;
     background: var(--secondaryColor);
     padding: 30px;
     box-shadow: var(--boxShadow);
@@ -192,6 +194,7 @@ rigtSidebar
 ************************/
 .rigtSidebar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between
 }
 .rigtSidebar article img {
@@ -244,9 +247,47 @@ rigtSidebar
 /************************
 kontakt
 ************************/
-
-
-
+.kontakt {
+    padding: 30px;
+}
+.kontakt form {
+    display: flex;
+    flex-direction: column;
+}
+.kontakt form input,
+.kontakt form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--secondaryColor);
+    font-size: 1rem;
+    opacity: .9;
+}
+/************************
+R E S P O N S I V E
+************************/
+@media(max-width:768px) {
+    .container {
+        width: 90%
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav ul li a {
+        margin: 10px;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
+    .posts article,
+    footer .container article:nth-child(1),
+    footer .container article:nth-child(2),
+    footer .container article:nth-child(3),
+    .rigtSidebar article,
+    .rigtSidebar aside {
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+    }
+}
 
 
 
