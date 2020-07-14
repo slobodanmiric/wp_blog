@@ -8,7 +8,7 @@
     --font: 16px;
     --transition: .3s ease;
     --borderRadius: 5px;
-    --boxShadow: 0 5px 15px lightgray;
+    --boxShadow: 0 5px 15px #959191;
     --marginTop: 50px;
 }
 * {
@@ -30,6 +30,21 @@ body {
 .container {
     width: 80%;
     margin: auto;
+}
+.btn {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius:  var(--borderRadius);
+    background: var(--primaryColor);
+    color: var(--white);
+    margin: 20px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.btn:hover {
+    background: var(--secondaryColor);
+    color: var(--primaryColor);
+    transition: var(--transition);
 }
 /************************
 nav
@@ -75,6 +90,7 @@ header {
     padding: 50px;
     text-align: center;
     box-shadow: var(--boxShadow);
+    border-radius:  var(--borderRadius);
 }
 header h1 {
     font-size: 4rem;
@@ -83,4 +99,48 @@ header h3 {
     font-size: 1.7rem;
     font-weight: 300;
 }
+/************************
+posts
+************************/
+.posts {
+    margin-top: var(--marginTop);
+    display: flex;
+    justify-content: space-between;
+}
+.posts article img {
+    width: 100%;
+}
+.posts article {
+    flex: 0 0 31%;
+    box-shadow: var(--boxShadow);
+    border-radius:  var(--borderRadius);
+}
+.posts article .text {
+    padding: 30px;
+    background: var(--white);
+    opacity: .9;
+    text-align: center;
+    position: relative;
+    top: -5px;
+}
+.posts article .text h3 {
+    font-size: 2rem;
+}
+.posts article .text hr {
+    margin: 20px 0;
+}
+.posts article .text p {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.meta a {
+    color: var(--secondaryColor);
+}
+.meta a:hover {
+    color: var(--primaryColor);
+    transition: var(--transition);
+}
+
+
+
 
