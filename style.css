@@ -187,4 +187,64 @@ footer hr {
 footer h3 {
     font-size: 2rem;
 }
+/************************
+rigtSidebar
+************************/
+.rigtSidebar {
+    display: flex;
+    justify-content: space-between
+}
+.rigtSidebar article img {
+    width: 100%;
+}
+.rigtSidebar article {
+    flex: 0 0 59%;
+    box-shadow: var(--boxShadow);
+    border-radius:  var(--borderRadius);
+}
+.rigtSidebar article .text {
+    padding: 30px;
+    background: var(--white);
+    opacity: .9;
+    text-align: center;
+    position: relative;
+    top: -5px;
+}
+.rigtSidebar article .text h3 {
+    font-size: 2rem;
+}
+.rigtSidebar article .text hr {
+    margin: 20px 0;
+}
+.rigtSidebar article .text p {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.rigtSidebar aside {
+    flex: 0 0 39%;
+}
+.rigtSidebar aside ul {
+    list-style: none;
+    background: var(--white);
+    padding: 30px;
+    opacity: .9;
+    line-height: 2;
+    box-shadow: var(--boxShadow);
+    border-radius:  var(--borderRadius);
+}
+.rigtSidebar aside ul a {
+    font-size: 1.2rem;
+}
+.rigtSidebar aside h3 {
+    font-size: 1.7rem;
+}
+.rigtSidebar aside hr {
+    margin: 20px 0;
+}
+
+
+
+
+
+
 
