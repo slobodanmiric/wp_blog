@@ -1,0 +1,331 @@
+/*
+Theme Name: WP Blog
+Theme URI: https://webcon.rs
+Author: Slobodan Miric
+Description: Simple Blog WP theme
+Version: 1.0
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Pacifico&display=swap");
+:root {
+    --bodyText: 'Open Sans', sans-serif;
+    --primaryColor: #101820FF;
+    --secondaryColor: #F2AA4CFF;
+    --white: #fff;
+    --lightGray: #f2f2f2;
+    --font: 16px;
+    --transition: .3s ease;
+    --borderRadius: 5px;
+    --boxShadow: 0 5px 15px #959191;
+    --marginTop: 50px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--bodyText);
+    color: var(--primaryColor);
+    font-size: var(--font);
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 50px 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.btn {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius:  var(--borderRadius);
+    background: var(--primaryColor);
+    color: var(--white);
+    margin: 20px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.btn:hover {
+    background: var(--secondaryColor);
+    color: var(--primaryColor);
+    transition: var(--transition);
+}
+/************************
+nav
+************************/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+nav .logo {
+    background: var(--primaryColor);
+    padding: 10px 25px;
+    border-radius: var(--borderRadius);
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: var(--primaryColor);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+nav ul li a:hover {
+    color: var(--secondaryColor);
+    transition: var(--transition);
+}
+/************************
+header
+************************/
+header {
+    background: var(--secondaryColor);
+    opacity: .9;
+    padding: 50px;
+    text-align: center;
+    box-shadow: var(--boxShadow);
+    border-radius:  var(--borderRadius);
+}
+header h1 {
+    font-size: 4rem;
+}
+header h3 {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+/************************
+posts
+************************/
+.posts {
+    margin-top: var(--marginTop);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.posts article img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.posts article {
+    flex: 0 0 31%;
+    box-shadow: var(--boxShadow);
+    border-radius:  var(--borderRadius);
+}
+.posts article .text {
+    padding: 30px;
+    background: var(--white);
+    opacity: .9;
+    text-align: center;
+    position: relative;
+    top: -5px;
+}
+.posts article .text h3 {
+    font-size: 2rem;
+}
+.posts article .text hr {
+    margin: 20px 0;
+}
+.posts article .text p {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.meta a {
+    color: var(--secondaryColor);
+}
+.meta a:hover {
+    color: var(--primaryColor);
+    transition: var(--transition);
+}
+.featured-image img {
+    width: 100%;
+    height: auto;
+}
+/************************
+footer
+************************/
+footer {
+    margin-top: var(--marginTop);
+}
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--secondaryColor);
+    padding: 30px;
+    box-shadow: var(--boxShadow);
+    border-radius:  var(--borderRadius);
+    opacity: .9;
+}
+footer .container article:nth-child(1) {
+    flex: 2
+}
+footer .container article:nth-child(2) {
+    flex: 1;
+}
+footer .container article:nth-child(2) ul {
+    list-style: none;
+}
+footer .container article:nth-child(2) ul a {
+    text-decoration: none;
+}
+footer .container article:nth-child(3) {
+    flex: 1;
+}
+footer a {
+    color: var(--primaryColor);
+}
+footer a:hover {
+    color: var(--white);
+    transition: var(--transition);
+}
+footer hr {
+    width: 100px;
+    margin: 20px 0;
+    border: none;
+    background: var(--primaryColor);
+    height: 1px;
+}
+footer h3 {
+    font-size: 2rem;
+}
+footer .container article:nth-child(3) i {
+    font-size: 2rem;
+    margin-right: 20px;
+}
+/************************
+rigtSidebar
+************************/
+.rigtSidebar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+.rigtSidebar article img {
+    width: 100%;
+}
+.rigtSidebar article {
+    flex: 0 0 59%;
+    box-shadow: var(--boxShadow);
+    border-radius:  var(--borderRadius);
+}
+.rigtSidebar article .text {
+    padding: 30px;
+    background: var(--white);
+    opacity: .9;
+    text-align: center;
+    position: relative;
+    top: -5px;
+}
+.rigtSidebar article .text h3 {
+    font-size: 2rem;
+}
+.rigtSidebar article .text hr {
+    margin: 20px 0;
+}
+.rigtSidebar article .text p {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.rigtSidebar aside {
+    flex: 0 0 39%;
+}
+.rigtSidebar aside ul {
+    list-style: none;
+    background: var(--white);
+    padding: 30px;
+    opacity: .9;
+    line-height: 2;
+    box-shadow: var(--boxShadow);
+    border-radius:  var(--borderRadius);
+}
+.rigtSidebar aside ul a {
+    font-size: 1.2rem;
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+.rigtSidebar aside ul a:hover {
+    color: var(--secondaryColor);
+}
+.rigtSidebar aside h3 {
+    font-size: 1.7rem;
+}
+.rigtSidebar aside hr {
+    margin: 20px 0;
+}
+/************************
+kontakt
+************************/
+.kontakt article {
+    box-shadow: none;
+    border-radius:  none;
+}
+.kontakt form {
+    display: flex;
+    flex-direction: column;
+}
+.kontakt form input,
+.kontakt form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--secondaryColor);
+    font-size: 1rem;
+    opacity: .9;
+}
+/************************
+home
+************************/
+.home {
+    background: var(--white);
+    text-align: center;
+    margin-top: 50px;
+    opacity: .9;
+    padding: 50px;
+}
+.home h2 {
+    font-size: 3rem;
+}
+.home hr {
+    width: 50%;
+    margin: 20px auto;
+}
+.home p {
+    padding-bottom: 30px;
+}
+/************************
+R E S P O N S I V E
+************************/
+@media(max-width:768px) {
+    .container {
+        width: 90%
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav ul li a {
+        margin: 10px;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
+    .posts article,
+    footer .container article:nth-child(1),
+    footer .container article:nth-child(2),
+    footer .container article:nth-child(3),
+    .rigtSidebar article,
+    .rigtSidebar aside {
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+    }
+}
