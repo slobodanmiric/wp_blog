@@ -247,8 +247,9 @@ rigtSidebar
 /************************
 kontakt
 ************************/
-.kontakt {
-    padding: 30px;
+.kontakt article {
+    box-shadow: none;
+    border-radius:  none;
 }
 .kontakt form {
     display: flex;
